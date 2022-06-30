@@ -1,8 +1,11 @@
 //Data do Evento
-let dataDoEvento = 29/06/2022
-if (dataDoEvento > 29/06/2022) {
-    console.log("Data válida, permitir evento!")
-} else {
+let dataDoEvento = new Date('25/06/2022')
+let dataHoje = new Date()
+
+ console.log(dataEvento)
+ if(dataEvento > dataHoje) {
+    console.log("Evento válido")
+ } else {
     console.log("Data inválida, cadastro não permitido")
 }
 //Idade dos participantes 
@@ -18,4 +21,11 @@ if (quantParticipantes >= 100) {
     console.log("Cadastro realizado com sucesso!")
 } else {
     console.log("Alerta, quantidade de participantes excede o limite")
+}
+//Lista dos Participantes e Palestrantes
+let listaParticipantes = ["Danilo", "Leandro", "Luisa", "Filipe"]
+let listaPalestrantes = ["Luan","Pedro","Catarina","Emily"]
+
+for(let contador = 0; contador < listaParticipantes.length; contador ++) {
+    console.log(listaParticipantes[contador])
 }
